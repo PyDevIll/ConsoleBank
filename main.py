@@ -258,8 +258,7 @@ if __name__ == "__main__":
         print("9. Просмотр отложенных пополнений (filtered)")
         print("0. Выйти из \"приложения\"")
         print()
-        if (op := get_number(f"Какая операция Вас интересует? : ")) is None:
-            continue
+        op = int(input(f"Какая операция Вас интересует? : "))
         print()
 
         if op not in range(10):
